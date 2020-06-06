@@ -8,7 +8,7 @@
     [
         {
             "name": "Run",
-            "shell_cmd": "kotlinc ${file} -include-runtime -d ${file_base_name}.jar && java -jar ${file_base_name}.jar < D:/trial/inputf.in > D:/trial/outputf.in",
+            "shell_cmd": "kotlinc ${file} -include-runtime -d ${file_base_name}.jar && java -jar ${file_base_name}.jar < inputf.in > outputf.in",
         }
     ]
 }
