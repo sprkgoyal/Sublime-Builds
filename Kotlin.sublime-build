@@ -1,0 +1,14 @@
+{
+    "shell_cmd": "kotlinc ${file} -include-runtime -d ${file_base_name}.jar",
+    "file_regex" : "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir" : "${file_path}",
+    "selector" : "source.kotlin",
+    "shell" : true,
+    "variants":
+    [
+        {
+            "name": "Run",
+            "shell_cmd": "kotlinc ${file} -include-runtime -d ${file_base_name}.jar && java -jar ${file_base_name}.jar < D:/trial/inputf.in > D:/trial/outputf.in",
+        }
+    ]
+}
