@@ -1,0 +1,18 @@
+{
+	"cmd": "javac $file_name",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	
+  // Find the jdk path in your pc, remove mine and copy yours
+  
+  "path": "C:\\Program Files\\Java\\jdk-14.0.1\\bin",
+	
+  "selector": "source.java",
+	"shell": true,
+	"variants":
+    [
+        {
+            "name": "Run",
+            "shell_cmd": "javac $file_name && java $file_base_name < inputf.in > outputf.in",
+        }
+    ]
+}
